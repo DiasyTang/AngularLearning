@@ -1,0 +1,42 @@
+.selected{
+    background-color: #CFD8DC !important;
+    color: white;
+}
+
+#menu{
+    width:170px;
+    float:left;
+}
+
+#container{
+    background-color: #8397a1;
+    float: left;
+    text-align: center;
+    align-content: flex-start;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    margin: 0px 0px 0px 170px;
+    border-radius: 4px;
+}
+
+.operations{
+    list-style-type: none;
+    padding: 0;
+}
+
+.operations li{
+    position: relative;
+    cursor: pointer;
+    background-color: #eee;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+
+.operations li:hover{
+    color: #607d8b;
+    background-color: #ddd;
+    left: .1em;
+}

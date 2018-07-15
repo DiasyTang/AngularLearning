@@ -1,0 +1,19 @@
+<table border="0" style="width: 100%;">
+    <tr>
+        <td style="width: 20%;">
+            <h2>My Operations</h2>
+            <ul class="operations">
+              <li *ngFor="let operation of operations"
+                  (click)="onSelect(operation)"
+                  [class.selected]="operation===selectedoperation">
+                <span>{{operation}}</span>
+              </li>
+            </ul>
+        </td>
+        <td style="width: 80%;">
+            <div *ngIf="selectedoperation">
+                <h1>{{selectedoperation}}</h1>
+            </div>
+        </td>
+    </tr>
+</table>

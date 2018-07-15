@@ -1,0 +1,14 @@
+<div id="menu">
+  <h2>My Operations</h2>
+  <ul class="operations">
+    <li *ngFor="let operation of operations"
+        (click)="onSelect(operation)"
+        [class.selected]="operation===selectedoperation">
+      <span>{{operation}}</span>
+    </li>
+  </ul>
+</div>
+ 
+<div  id="container" *ngIf="selectedoperation">
+  <h1>{{selectedoperation}}</h1>
+</div>
